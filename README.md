@@ -17,7 +17,3 @@ sy-shorturl.herokuapp.com/1
 #### Will redirect to:
 
 https://www.google.com
-
-
-
-node.js, express, mongodb
