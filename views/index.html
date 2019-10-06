@@ -22,8 +22,9 @@
       <h3>User Story:</h3>
       <ol>
         <li>
-          I can POST a URL to <code>sy-shorturl.herokuapp.com/new</code> and I
-          will receive a shortened URL in the JSON response.<br />Example :
+          I can POST a URL to
+          <code>sy-shorturl.herokuapp.com/api/shorturl/new</code> and I will
+          receive a shortened URL in the JSON response.<br />Example :
           <code>{"original_url":"https://www.google.com","short_url":1}</code>
         </li>
         <li>
@@ -42,10 +43,10 @@
 
       <h3>Short URL Creation</h3>
       <p>
-        example: <code>POST sy-shorturl.herokuapp.com/new</code> -
+        example: <code>POST sy-shorturl.herokuapp.com/api/shorturl/new</code> -
         <code>https://www.google.com</code>
       </p>
-      <form action="/new" method="POST">
+      <form action="/api/shorturl/new" method="POST">
         <label for="url_input">URL to be shortened</label>
         <input
           id="url_input"
@@ -56,8 +57,8 @@
         <input type="submit" value="POST URL" />
       </form>
       <h3>Example Usage:</h3>
-      <a href="https://sy-shorturl.herokuapp.com/4">
-        sy-shorturl.herokuapp.com/4
+      <a href="https://sy-shorturl.herokuapp.com/api/shorturl/4">
+        sy-shorturl.herokuapp.com/api/shorturl/4
       </a>
 
       <h3>Will Redirect to:</h3>

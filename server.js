@@ -41,7 +41,7 @@ mongoose.set("debug", true);
 
 var Url = mongoose.model("Url", urlSchema);
 
-app.post("/new", function(req, res) {
+app.post("/api/shorturl/new", function(req, res) {
   var orig_url = req.body["url"];
 
   // validate url
@@ -78,7 +78,7 @@ app.post("/new", function(req, res) {
   }
 });
 
-app.get("/:shorturl", function(req, res) {
+app.get("/api/shorturl/:shorturl", function(req, res) {
   var short = req.params.shorturl;
   // check if shorturl is a valid integer
   if (isNaN(short)) {
